@@ -7,43 +7,43 @@
   </head>
   <body>
     <script>
-      const DateOfBirth = prompt("input your date of birth");
-      const City = prompt("input your city");
-      const Sport = prompt("input your favorite sport");
+      const dateOfBirth = prompt("input your date of birth");
+      const city = prompt("input your city");
+      const sport = prompt("input your favorite sport");
 
-      let Citytext;
-      if (City === "Kyiv") {
-        CityText = "You live in the capitale of Ukraine";
-      } else if (City === "London") {
-        CityText = "You live in the capitale of United Kingdom";
-      } else if (City === "Washington") {
-        CityText = "You live in the capitale of USA";
+      let citytext;
+      if (city === "Kyiv") {
+        cityText = "You live in the capitale of Ukraine";
+      } else if (city === "London") {
+        cityText = "You live in the capitale of United Kingdom";
+      } else if (city === "Washington") {
+        cityText = "You live in the capitale of USA";
       } else {
-        CityText = "You live in the " + City;
+        cityText = "You live in the " + city;
       }
 
-      let SportsText;
-      if (Sport === "Boxing") {
-        SportsText = "Cool! You want to be like Oleksandr Usyk";
-      } else if (Sport === "Wresling") {
-        SportsText = "Cool! You want to be like Zhan Beleniuk";
-      } else if (Sport === "Football") {
-        SportsText = "Cool! You want to be like Andriy Shevchenko";
+      let sportsText;
+      if (sport === "Boxing") {
+        sportsText = "Cool! You want to be like Oleksandr Usyk";
+      } else if (sport === "Wresling") {
+        sportsText = "Cool! You want to be like Zhan Beleniuk";
+      } else if (sport === "Football") {
+        sportsText = "Cool! You want to be like Andriy Shevchenko";
       } else {
-        SportsText = "Your favorite sport is " + Sport;
+        sportsText = "Your favorite sport is " + sport;
       }
 
-      if (DateOfBirth === null || City === null || Sport === null) {
+      if (dateOfBirth === null || city === null || sport === null) {
         let pity = "It is a pity that you did not want to enter your: ";
-        if (DateOfBirth === null) pity += "Date of birth ";
-        if (City === null) pity += "City ";
-        if (Sport === null) pity += "Sport";
+        if (dateOfBirth === null) pity += "Date of birth ";
+        if (city === null) pity += "City ";
+        if (sport === null) pity += "Sport";
         alert(pity);
       } else {
         alert(`
-Hello User! You was born on ${DateOfBirth}
-${CityText}
-${SportsText} 
+Hello User! You was born on ${dateOfBirth}
+${cityText}
+${sportsText} 
 `);
       }
     </script>
